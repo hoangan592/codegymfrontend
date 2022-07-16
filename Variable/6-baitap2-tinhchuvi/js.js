@@ -1,33 +1,10 @@
-// b1: Nhập dữ liệu 
-newFunction();
-
-
-function newFunction() {
-    let r = prompt("Mời bạn nhập bán kính");
-    r = Number(r);
-    const PI = 3.14;
-    // b2: Tính toán chu vi và diện tích
-    let p = 2 * PI * r;
-    let s = PI * s * r;
-    // b3: Hiển thị kết quả
-    document.write("Chu vi là " + p.toLocaleString(loacales, 'enIN'));
-    document.write("<br>");
+function calCircle() {
+    let r = prompt("Nhập vào bán kính hình tròn: ")
+    //**: toán tử mũ, trước ** là cơ số, sau ** là số mũ
+    let area = r ** 2 * Math.PI
+    let peri = r * 2 * Math.PI
+    //tính mũ bằng thư viện Math: Math.pow()
+    // let area = Math.pow(r, 2) * Math.PI
+    //toFixed(): làm tròn, lấy đến bao nhiêu số thập phân sau dấu phẩy
+    document.getElementById("bai2").innerHTML = "Diện tích là: " + area.toFixed(3) + "<br>Chu vi là: " + peri.toFixed(2)
 }
-    // function demoPrompt() {
-    //     // prompt: các giá trị nhập trong prompt đều là giá trị có kiểu string
-    //     // let value = parseInt(prompt("Nhập gì đó vào đây đi..."))
-    //     // let value1 = parseInt(prompt("Nhập gì đó vào đây đi..."))
-    //     // let value = +prompt("Nhập gì đó vào đây đi...")
-    //     // let value1 = +prompt("Nhập gì đó vào đây đi...")
-    //     // document.write(value + "<br>")
-    //     // document.write(value1 + "<br>")
-    //     // document.write(value + value1)
-
-    //     //nhập sử dụng getElementById()
-    //     let name = document.getElementById("name").value
-    //     document.write(name)
-    //     // alert(name)
-    //     // console.log(name);
-    //     // document.getElementById("result").innerText = "<b>" + name + "</b>"
-    //     // document.getElementById("result1").innerHTML = "<b>" + name + "</b>"
-    // }
