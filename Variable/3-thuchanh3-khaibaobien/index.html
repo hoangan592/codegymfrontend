@@ -4,20 +4,17 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>[Thực hành] Khai báo và sử dụng biến</title>
 </head>
 <body>
     <script>
-    let f = 20.5;
-    let b = true;
-    let s = 'Hà Nội';
-
-    Document.write('i = ' + i);
-    Document.write('<br/>');
-    Document.write('f = ' + f);
-    Document.write('<br/>');
-    Document.write('s = ' + s);
-    Document.write('<br/>');
+    let a = prompt("Nhập số F = ");
+    let b = prompt("Nhập số B = ");
+    if (a % b ==0) {
+        alert("a: " + a + " là bội số của b: " + b)
+    } else {
+        alert("a không là bội số của b")
+    }
     </script>
 </body>
 </html>
