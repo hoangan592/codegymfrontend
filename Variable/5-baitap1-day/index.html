@@ -7,6 +7,16 @@
     <title>Day-Month-Year</title>
 </head>
 <body>
-    
+    <!-- Bài 1 Hiển thị ngày tháng năm -->
+    <td>onclick="displayDate()"Day-Month-Year</td> 
+    <script>
+        function displayDate() {
+            let Day = prompt("Nhập vào ngày bạn muốn: ");
+            let Month = prompt("Nhập vào số tháng bạn muốn: ");
+            let Year = prompt("Nhập vào số năm bạn muốn: ");
+
+            document.getElementById("Day-Month-Year").innerText = day + "-" + month + "-" + year
+        }
+    </script>
 </body>
 </html>
